@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_log_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hujie.fazhiregister.LogInActivity">
+    <EditText
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="username"
+        android:id="@+id/login_et_phone"
+        />
+
+    <EditText
+        android:hint="password"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/login_et_pasd"
+        />
+
+    <Button
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:text="login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_btn_login" />
+</LinearLayout>

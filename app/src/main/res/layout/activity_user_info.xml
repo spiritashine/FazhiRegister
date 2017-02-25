@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="user"
+            type="com.hujie.fazhiregister.base.UserBean"/>
+    </data>
+<LinearLayout
+    android:id="@+id/activity_user_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hujie.fazhiregister.UserInfoActivity">
+    <ImageView
+        android:id="@+id/user_icon"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:text="@={user.nickname}"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:id="@+id/nickname"
+        android:hint="nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:text="@{String.valueOf(user.gender)}"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:id="@+id/gender"
+        android:hint="gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:text="@{String.valueOf(user.age)}"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:id="@+id/age"
+        android:hint="age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:text="@={user.province}"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:id="@+id/province"
+        android:hint="province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:text="@={user.city}"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:id="@+id/city"
+        android:hint="city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:text="@={user.trade}"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:id="@+id/trade"
+        android:hint="trade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:text="@={user.company}"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:id="@+id/company"
+        android:hint="company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:text="@={user.job}"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:id="@+id/job"
+        android:hint="job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:text="@={user.fullname}"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:id="@+id/fullname"
+        android:hint="fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="commit"
+        android:id="@+id/get"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</layout>
